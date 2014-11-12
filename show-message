@@ -1,0 +1,15 @@
+function show_msg()
+{
+var msg = "You are now leaving the Gerstein Fisher Funds website and entering the Gerstein Fisher website.";
+return confirm(msg);
+}
+
+$(function () {
+	$('.visit-gersteinfisher a').on('click', function () {
+		return show_msg()
+	});
+	
+	$('a.visit-gersteinfisher').on('click', function () {
+		return show_msg()
+	});
+});
